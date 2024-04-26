@@ -1,0 +1,27 @@
+body{
+    padding: 10% 20%;
+    margin: 100px 100px;
+    border: 2px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2em;
+    font-size: 1.5em;
+}
+header{
+    letter-spacing: 4px;
+    text-align: center;
+}
+h3{
+    color: #006EB6;
+    font-size: .8em;
+}
+.italics{
+    font-style: italic;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+}
+.logo{
+    height: 150px;
+    text-align: center;
+}
