@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 1rem; /* gap puts some space between grid items */ 
+}
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    header{
+        background-color: black;
+        color: white;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+

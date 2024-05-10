@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+--secondary-color: #59c3c3;
+--primary-color: #52489c;
+--accent-color: #f45b69;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: Mooli, san-serif;
+}
+
+body{
+    font-family: var(--secondary-font);
+    margin:0 auto;
+    font-size: 1.5em;
+}
+main{
+    padding-top: 20px;
+}
+h1,h2{
+    margin: auto 0;
+    text-align: center;
+
+}
+header, footer{
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 25px 0px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-light);
+    padding: 10%;
+    
+}
+a:hover {
+  color: var(--accent-color);
+  background-color: var(--secondary-color);
+}
+ul{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    justify-self: center;
+    border: 10px solid white;
+    box-shadow: 5px 5px 10px black;
+    margin: 40px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 15%;
+}
+
+.menu{
+    display:none;
+}
+
+@media screen and (max-width: 700px) {
+
+    body{
+        margin: 0 auto;
+    }
+
+    nav{
+        text-align: center;
+    }
+    
+    .gallery {
+        display:grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    ul{
+        display:block;
+        padding: 10px;
+    }
+    a{
+        padding:0%;
+    }
+    .menu{
+        font-family: var(--secondary-font);
+        display:block;
+        text-align: center;
+        background: none;
+        border: none;
+        color: inherit;
+        text-decoration: underline;
+        cursor: pointer;
+        padding: 0;
+        margin: 0 auto;
+        font-family: inherit;
+        font-size: inherit;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    ul{
+        display:flexblox;
+        padding: 10px;
+
+    }
+}
