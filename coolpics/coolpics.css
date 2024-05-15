@@ -103,21 +103,25 @@ img{
     }
 }
 
-/* @media screen and (max-width: 1000px) {
-    
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-    ul{
-        display:flexblox;
-        padding: 10px;
-
-    } 
-} */
 
  @media screen and (min-width: 700px) {
 
     ul {
         flex-direction: row;
     }
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
+@media screen and (min-width: 1000px) {
+    
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    ul{
+        display:flexblox;
+        padding: 10px;
+
+    } 
+} 
