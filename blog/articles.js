@@ -23,19 +23,25 @@ const articles = [
       ages: "12-16",
       genre: "Fantasy",
       stars: "⭐⭐⭐⭐"
+    },
+    {
+      id: 3,
+      title: "Belgariad Book One: Pawn of Prophecy",
+      date: "Feb 12, 2022",
+      description:
+      "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+      imgSrc:
+      "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+      imgAlt: "Book cover for Pawn of Prophecy",
+      ages: "12-16",
+      genre: "Fantasy",
+      stars: "⭐⭐⭐⭐⭐"
     }
-
 ];
-
-// articles.forEach((article) => console.log(article.imgSrc));
-
-// const showArticles = document.open(articles);
 
 function displayArticles(articles)
 {
-    const leftDivContainer = document.getElementById("left-article-div");
-    const rightDivContainer = document.getElementById("right-article-div");
-    const main = document.querySelector("main");
+    const mainContent = document.getElementById("maincontent");
     
     articles.forEach(article => {
         
@@ -75,18 +81,9 @@ function displayArticles(articles)
         rightArticleElement.appendChild(titleElement);
         rightArticleElement.appendChild(imgElement);
         rightArticleElement.appendChild(descriptionElement);
-        
-        // leftDivContainer.appendChild(dateElement);
-        // leftDivContainer.appendChild(agesElement);
-        // leftDivContainer.appendChild(genreElement);
-        // leftDivContainer.appendChild(starsElement);
 
-        // rightDivContainer.appendChild(titleElement);
-        // rightDivContainer.appendChild(imgElement);
-        // rightDivContainer.appendChild(descriptionElement);
-
-        main.appendChild(leftArticleElement);
-        main.appendChild(rightArticleElement);
+        mainContent.appendChild(leftArticleElement);
+        mainContent.appendChild(rightArticleElement);
     });
 
 }
