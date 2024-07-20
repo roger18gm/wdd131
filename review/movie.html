@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="moovees review site">
+    <meta property="og:description" content="Find and comment on your favorite movies with our easy-to-use search engine.">
+    <meta property="og:image" content="https://roger18gm.github.io/wdd131/recipes/images/recipe-book.png">
+    <meta property="og:url" content="https://roger18gm.github.io/wdd131/recipes/index.html">
+    <meta name="twitter:card" content="https://roger18gm.github.io/wdd131/recipes/images/youtube_icon.svg">
+    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website for a movie review page">
+    <meta name="author" content="Roger Galan">
+    <title>moovees review!</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <header>
+        <img class="logo-img" src="images/moovees_logo.png" alt="Brand logo image for 'moovees'">
+        <h1><a class="return" href="index.html"><img class="back-arrow" src="images/arrow_button.png">Return</a></h1>
+    </header>
+    <main>
+        <section class="subpage-info"></section>
+        <div id="create-comment">
+            <form id="comment-form">
+                <p id="comment-label"><label for="comment">moovee reviews</label></p>
+                <textarea id="comment" name="comment" rows="5"></textarea>
+            </form>
+            <button type="submit" id="commentButton">Submit</button>
+        </div>
+        <section class="comments"></section>
+
+    </main>
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="../recipes/images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="../recipes/images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="../recipes/images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <p>moovees &copy; 2024 - Roger Galan Manzano</p>
+        <a id="flink"href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Icons created by Freepik - Flaticon</a>
+    </footer>
+    <script src="movie.js" type="module"></script>
+</body>
+</html>
